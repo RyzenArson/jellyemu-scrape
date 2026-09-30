@@ -3,10 +3,10 @@
   "name": "Romsfun",
   "domain": "romsfun.com",
   "searchUrl": "https://romsfun.com/?s={query}",
-  "searchRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/roms/[^\"\\s]+)\"[^>]*>\\s*(?<title>[^<]+?)\\s*</a>",
+  "searchRegex": "href=\"(?<url>https://romsfun\\.com/roms/[^\"]+)\"[^>]*>(?<title>[^<]{2,})</a>",
   "browseUrl": "https://romsfun.com/roms/{system}",
-  "browseRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/roms/[^\"\\s]+)\"[^>]*>\\s*(?<title>[^<]+?)\\s*</a>",
-  "downloadActionRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/download/[^\"\\s]+)\"[^>]*>[^<]*Download[^<]*</a>",
+  "browseRegex": "href=\"(?<url>https://romsfun\\.com/roms/[^\"]+)\"[^>]*>(?<title>[^<]{2,})</a>",
+  "downloadActionRegex": "href=\"(?<url>https://romsfun\\.com/download/[^\"]+)\"",
   "downloadMethod": "GET",
   "systemMap": {
     "NES": "nes",
