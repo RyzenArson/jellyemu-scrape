@@ -1,25 +1,24 @@
 [
   {
-    "name": "Romsfun",
-    "domain": "romsfun.com",
-    "searchUrl": "https://romsfun.com/?s={query}",
-    "searchRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/roms/[^\"\\s]+)\"[^>]*class=\"[^\"]*hover:text-romfun-pink[^\"]*\"[^>]*>\\s*(?<title>[^<]+)\\s*</a>",
-    "browseUrl": "https://romsfun.com/roms/{system}",
-    "browseRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/roms/[^\"\\s]+)\"[^>]*class=\"[^\"]*hover:text-romfun-pink[^\"]*\"[^>]*>\\s*(?<title>[^<]+)\\s*</a>",
-    "downloadActionRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/download/[^\"\\s]+)\"[^>]*>\\s*(?:<svg[\\s\\S]*?</svg>\\s*)?Download\\s+ROM\\s*</a>",
-    "downloadMethod": "GET",
-    "systemMap": {
-      "NES": "nes",
-      "SNES": "snes",
-      "Nintendo 64": "nintendo-64",
-      "Game Boy": "game-boy",
-      "Game Boy Color": "game-boy-color",
-      "Game Boy Advance": "game-boy-advance",
-      "Nintendo DS": "nintendo-ds",
-      "Sega Genesis": "sega-genesis",
-      "PlayStation": "playstation"
-    }
-  },
+  "name": "Romsfun",
+  "domain": "romsfun.com",
+  "searchUrl": "https://romsfun.com/?s={query}",
+  "searchRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/roms/[^\"\\s]+)\"[^>]*>\\s*(?<title>[^<]+?)\\s*</a>",
+  "browseUrl": "https://romsfun.com/roms/{system}",
+  "browseRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/roms/[^\"\\s]+)\"[^>]*>\\s*(?<title>[^<]+?)\\s*</a>",
+  "downloadActionRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/download/[^\"\\s]+)\"[^>]*>[^<]*Download[^<]*</a>",
+  "downloadMethod": "GET",
+  "systemMap": {
+    "NES": "nes",
+    "SNES": "snes",
+    "N64": "nintendo-64",
+    "Genesis": "sega-genesis",
+    "GBA": "game-boy-advance",
+    "GBC": "game-boy-color",
+    "NDS": "nintendo-ds",
+    "PS1": "playstation"
+  }
+},
   {
     "name": "Vimm's Lair",
     "domain": "vimm.net",
