@@ -3,20 +3,21 @@
   "name": "Romsfun",
   "domain": "romsfun.com",
   "searchUrl": "https://romsfun.com/?s={query}",
-  "searchRegex": "<a\\s+href=\"(https://romsfun\\.com/roms/[^\"]+)\"[^>]*class=\"[^\"]*hover:text-romfun-pink[^\"]*\"[^>]*>\\s*([^<]+?)\\s*</a>",
+  "searchRegex": "<h3[^>]*>\\s*<a href=\"(?<url>https://romsfun\\.com/roms/(?<system>[^/]+)/(?<id>[^\"]+)\\.html)\"[^>]*>\\s*(?<title>[^<]+?)\\s*</a>",
   "browseUrl": "https://romsfun.com/roms/{system}/",
-  "browseRegex": "<a\\s+href=\"(https://romsfun\\.com/roms/[^\"]+)\"[^>]*class=\"[^\"]*hover:text-romfun-pink[^\"]*\"[^>]*>\\s*([^<]+?)\\s*</a>",
-  "downloadActionRegex": "<a\\s+href=\"(https://romsfun\\.com/download/[^\"]+)\"[^>]*>[\\s\\S]*?Download\\s*ROM[\\s\\S]*?</a>",
+  "browseRegex": "<h3[^>]*>\\s*<a href=\"(?<url>https://romsfun\\.com/roms/(?<system>[^/]+)/(?<id>[^\"]+)\\.html)\"[^>]*>\\s*(?<title>[^<]+?)\\s*</a>",
+  "downloadActionRegex": "<a\\s+href=\"(?<url>https://romsfun\\.com/download/[^\"]+)\"[^>]*>[\\s\\S]*?Download\\s*ROM[\\s\\S]*?</a>",
   "downloadMethod": "GET",
   "systemMap": {
-    "NES": "nes",
-    "SNES": "snes",
-    "N64": "nintendo-64",
-    "Genesis": "sega-genesis",
-    "GBA": "game-boy-advance",
-    "GBC": "game-boy-color",
-    "NDS": "nintendo-ds",
-    "PS1": "playstation"
+    "game-boy": "GB",
+    "game-boy-color": "GBC",
+    "game-boy-advance": "GBA",
+    "nes": "NES",
+    "snes": "SNES",
+    "nintendo-64": "N64",
+    "sega-genesis": "Genesis",
+    "nintendo-ds": "NDS",
+    "playstation": "PS1"
   }
 },
   {
