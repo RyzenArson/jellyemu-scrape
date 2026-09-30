@@ -1,0 +1,12 @@
+{
+  "providers": [
+    {
+      "name": "Vimm",
+      "url": "https://vimm.net/"
+    },
+    {
+      "name": "Romsfun",
+      "url": "https://romsfun.com/"
+    }
+  ]
+}
